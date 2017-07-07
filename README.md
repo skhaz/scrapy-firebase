@@ -19,7 +19,7 @@ Follow the steps on this [guide](https://firebase.google.com/docs/admin/setup), 
 cat firebase_secrets.json | openssl base64 | pbcopy
 ```
 
-Add `scrapy-firebase` to your projects `settings.py` file.
+Add `scrapy-firebase` to your projects `settings.py` file and setup some variables.
 
 ```python
 ITEM_PIPELINES = [
@@ -34,6 +34,8 @@ FIREBASE_DATABASE = 'https://project-id.firebaseio.com/'  # replace project-id t
 
 FIREBASE_REF = ''  # insert an appropriate value
 
-FIREBASE_KEYS = ['uid', 'spider_name']  # to compose more robust child paths, you can add a list of properties
+FIREBASE_KEYS = ['uid', 'spider_name']  # to compose more robust
+                                        # child paths, you can add
+                                        # a list of properties
 
 ```
