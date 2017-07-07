@@ -30,12 +30,13 @@ FIREBASE_SECRETS = """
   YOUR BASE64 ENCODED JSON HERE
 """
 
-FIREBASE_DATABASE = 'https://project-id.firebaseio.com/'  # replace project-id to yours
+# Replace project-id to yours.
+FIREBASE_DATABASE = 'https://project-id.firebaseio.com/'
 
-FIREBASE_REF = ''  # insert an appropriate value
+# Insert an appropriate value.
+FIREBASE_REF = ''
 
-FIREBASE_KEYS = ['uid', 'spider_name']  # to compose more robust
-                                        # child paths, you can add
-                                        # a list of properties
+# To compose more robust child paths, you can add a list of properties.
+FIREBASE_KEYS = ['uid', 'spider_name']
 
 ```
