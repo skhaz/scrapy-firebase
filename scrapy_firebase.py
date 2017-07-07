@@ -26,7 +26,7 @@ class FirebasePipeline(BaseItemExporter):
 
         configuration = {
             'credential': credentials.Certificate(filename),
-            'options': { 'databaseURL': self.settings['FIREBASE_DATABASE'] }
+            'options': {'databaseURL': self.settings['FIREBASE_DATABASE']}
         }
 
         firebase_admin.initialize_app(**configuration)
